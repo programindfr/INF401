@@ -29,7 +29,7 @@ main:
 	@ hword @ affiche avant
 	LDR r0, LD_DH
 	LDR r1, [r0]
-	BL EcrHexa32
+	BL EcrHexa16
 	BL EcrZdecimal16
 
 	@ hword @ range -10
@@ -40,7 +40,7 @@ main:
 	@ hword @ affiche apres
 	LDR r0, LD_DH
 	LDR r1, [r0]
-	BL EcrHexa32
+	BL EcrHexa16
 	BL EcrZdecimal16
 
 
@@ -48,7 +48,7 @@ main:
 	@ byte @ affiche avant
 	LDR r0, LD_DB
 	LDR r1, [r0]
-	BL EcrHexa32
+	BL EcrHexa8
 	BL EcrZdecimal8
 
 	@ byte @ range -10
@@ -59,7 +59,7 @@ main:
 	@ byte @ affiche apres
 	LDR r0, LD_DB
 	LDR r1, [r0]
-	BL EcrHexa32
+	BL EcrHexa8
 	BL EcrZdecimal8
 
 fin:	B exit
