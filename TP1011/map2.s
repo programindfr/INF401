@@ -13,10 +13,10 @@ map:
 	
 	mov r5, #0			@ r5 = i = 0
 	
-	ldr r0, [fp, #20]	@ r0 = t1
-	ldrb r1, [fp, #16]	@ r1 = NMAX
-	ldr r2, [fp, #12]	@ r2 = t2
-	ldr r6, [fp, #8]	@ r6 = f
+	ldr r0, [fp, #8]	@ r0 = t1
+	ldr r1, [fp, #12]	@ r1 = NMAX
+	ldr r2, [fp, #16]	@ r2 = t2
+	ldr r6, [fp, #20]	@ r6 = f
 	
 tq:	cmp r5, r1
 	beq fintq

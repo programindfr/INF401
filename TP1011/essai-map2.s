@@ -39,7 +39,7 @@ main:
 		 ldr r3, LD_plus_un
 		 push {r0, r1, r2, r3}
 		 bl map
-		 add sp, sp, #16	@ pop de r0, ..., r3
+		 pop {r0, r1, r2, r3}
 
 
          @ afficher la sequence resultat
@@ -58,7 +58,7 @@ main:
 		 ldr r3, LD_carre
 		 push {r0, r1, r2, r3}
 		 bl map
-		 add sp, sp, #16	@ pop de r0, ..., r3
+		 pop {r0, r1, r2, r3}
 		 
          @ afficher la sequence resultat
          bl       AlaLigne
